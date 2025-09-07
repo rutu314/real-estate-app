@@ -1,118 +1,12 @@
-# Real Estate Web Application
+# React + Vite
 
-A ReactJS web app for real estate listings with Firebase Authentication and dynamic API integration.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
----
+Currently, two official plugins are available:
 
-## Features
-- **Home Page**:
-  - Hero banner
-  - “What We Do” section
-  - Featured properties (from API)
-  - Sale and Rent property sections
-  - Newsletter subscription
-- **Property Listing Page**:
-  - List all properties fetched from API
-  - Filter by property type (sale/rent)
-- **Authentication**:
-  - Signup & Login using Firebase Authentication
-  - User session stored in localStorage
-- Responsive design for desktop & mobile
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
----
+## Expanding the ESLint configuration
 
-## Tech Stack
-- ReactJS (Functional Components + Hooks)
-- React Router
-- Firebase Authentication
-- Axios (API calls)
-- TailwindCSS (styling)
-
----
-
-## Project Structure
-# Real Estate Web Application
-
-A ReactJS web app for real estate listings with Firebase Authentication and dynamic API integration.
-
----
-
-## Features
-- **Home Page**:
-  - Hero banner
-  - “What We Do” section
-  - Featured properties (from API)
-  - Sale and Rent property sections
-  - Newsletter subscription
-- **Property Listing Page**:
-  - List all properties fetched from API
-  - Filter by property type (sale/rent)
-- **Authentication**:
-  - Signup & Login using Firebase Authentication
-  - User session stored in localStorage
-- Responsive design for desktop & mobile
-
----
-
-## Tech Stack
-- ReactJS (Functional Components + Hooks)
-- React Router
-- Firebase Authentication
-- Axios (API calls)
-- TailwindCSS (styling)
-
----
-
-## Project Structure
-real-estate-app/
-├─ public/
-├─ src/
-│ ├─ components/ → Navbar.jsx, Footer.jsx, PropertyCard.jsx, Hero.jsx, Form.jsx
-│ ├─ pages/ → Home.jsx, Listings.jsx, Login.jsx, Signup.jsx
-│ ├─ services/ → api.js, firebase.js
-│ ├─ context/ → AuthContext.js (optional)
-│ └─ App.jsx
-├─ .gitignore
-├─ package.json
-├─ tailwind.config.js
-└─ README.md
-
----
-
-## Setup Instructions
-
-1. **Clone the repository**
-```bash
-git clone <YOUR_REPO_URL>
-cd real-estate-app
-npm install
-Setup Firebase
-
-Go to Firebase Console
-.
-
-Create a new project.
-
-Enable Email/Password Authentication (Authentication → Sign-in method → Enable Email/Password).
-
-Copy the Firebase config and replace it in src/services/firebase.js.
-
-Run the app locally
-npm start
-API Used
-
-Property Listing API:
-https://68b826bcb715405043274639.mockapi.io/api/properties/PropertyListing
-## Screenshots
-
-**Home Page**  
-![Home Page](screenshots/home.png)
-
-**Listings Page**  
-![Listings Page](screenshots/listings.png)
-
-**Login Page**  
-![Login Page](screenshots/login.png)
-
-**Signup Page**  
-![Signup Page](screenshots/signup.png)
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
